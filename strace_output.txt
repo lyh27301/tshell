@@ -1,0 +1,441 @@
+execve("./a.out", ["./a.out", "fifo"], 0x7ffc4b51da98 /* 53 vars */) = 0
+brk(NULL)                               = 0x559919b9c000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=78556, ...}) = 0
+mmap(NULL, 78556, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f8476608000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260\34\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=2030544, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8476606000
+mmap(NULL, 4131552, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f8476004000
+mprotect(0x7f84761eb000, 2097152, PROT_NONE) = 0
+mmap(0x7f84763eb000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e7000) = 0x7f84763eb000
+mmap(0x7f84763f1000, 15072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f84763f1000
+close(3)                                = 0
+arch_prctl(ARCH_SET_FS, 0x7f84766074c0) = 0
+mprotect(0x7f84763eb000, 16384, PROT_READ) = 0
+mprotect(0x55991824d000, 4096, PROT_READ) = 0
+mprotect(0x7f847661c000, 4096, PROT_READ) = 0
+munmap(0x7f8476608000, 78556)           = 0
+rt_sigaction(SIGINT, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+getcwd("/home/yanhan/COMP310", 100)     = 21
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+brk(NULL)                               = 0x559919b9c000
+brk(0x559919bbd000)                     = 0x559919bbd000
+write(1, "Fifo pathname was copied success"..., 39Fifo pathname was copied successfully.
+) = 39
+write(1, "You can use commands with pipes "..., 43You can use commands with pipes in tshell.
+) = 43
+rt_sigaction(SIGINT, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+getcwd("/home/yanhan/COMP310", 100)     = 21
+write(1, "tshell: /home/yanhan/COMP310 $", 30tshell: /home/yanhan/COMP310 $) = 30
+fstat(0, {st_mode=S_IFREG|0664, st_size=364, ...}) = 0
+read(0, "echo hello world\ntouch hello.txt"..., 4096) = 364
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f8476607790) = 17079
+wait4(-1, hello world
+NULL, 0, NULL)                = 17079
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=17079, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+rt_sigaction(SIGINT, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+getcwd("/home/yanhan/COMP310", 100)     = 21
+write(1, "tshell: /home/yanhan/COMP310 $", 30tshell: /home/yanhan/COMP310 $) = 30
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f8476607790) = 17080
+wait4(-1, NULL, 0, NULL)                = 17080
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=17080, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+rt_sigaction(SIGINT, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+getcwd("/home/yanhan/COMP310", 100)     = 21
+write(1, "tshell: /home/yanhan/COMP310 $", 30tshell: /home/yanhan/COMP310 $) = 30
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f8476607790) = 17082
+wait4(-1, NULL, 0, NULL)                = 17082
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=17082, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+rt_sigaction(SIGINT, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+getcwd("/home/yanhan/COMP310", 100)     = 21
+write(1, "tshell: /home/yanhan/COMP310 $", 30tshell: /home/yanhan/COMP310 $) = 30
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f8476607790) = 17083
+wait4(-1, hello, world
+NULL, 0, NULL)                = 17083
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=17083, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+rt_sigaction(SIGINT, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+getcwd("/home/yanhan/COMP310", 100)     = 21
+write(1, "tshell: /home/yanhan/COMP310 $", 30tshell: /home/yanhan/COMP310 $) = 30
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f8476607790) = 17084
+wait4(-1, /home/yanhan/COMP310
+NULL, 0, NULL)                = 17084
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=17084, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+rt_sigaction(SIGINT, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+getcwd("/home/yanhan/COMP310", 100)     = 21
+write(1, "tshell: /home/yanhan/COMP310 $", 30tshell: /home/yanhan/COMP310 $) = 30
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f8476607790) = 17085
+wait4(-1, a	      ltrace_output.txt   manual_testing  tshell.c
+alex_shell.c  malloc_hog.c	  README.md	  yliu281@mimi.cs.mcgill.ca
+a.out	      manual_test001.txt  test.txt
+fifo	      manual_test002.txt  try.c
+NULL, 0, NULL)                = 17085
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=17085, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+rt_sigaction(SIGINT, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+getcwd("/home/yanhan/COMP310", 100)     = 21
+write(1, "tshell: /home/yanhan/COMP310 $", 30tshell: /home/yanhan/COMP310 $) = 30
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f8476607790) = 17086
+wait4(-1, /bin/sh
+NULL, 0, NULL)                = 17086
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=17086, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+rt_sigaction(SIGINT, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+getcwd("/home/yanhan/COMP310", 100)     = 21
+write(1, "tshell: /home/yanhan/COMP310 $", 30tshell: /home/yanhan/COMP310 $) = 30
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f8476607790) = 17087
+wait4(-1, NULL, 0, NULL)                = 17087
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=17087, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+rt_sigaction(SIGINT, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+getcwd("/home/yanhan/COMP310", 100)     = 21
+write(1, "tshell: /home/yanhan/COMP310 $", 30tshell: /home/yanhan/COMP310 $) = 30
+chdir("path/")                          = 0
+rt_sigaction(SIGINT, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+getcwd("/home/yanhan/COMP310/path", 100) = 26
+write(1, "tshell: /home/yanhan/COMP310/pat"..., 35tshell: /home/yanhan/COMP310/path $) = 35
+chdir("../path/to")                     = 0
+rt_sigaction(SIGINT, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+getcwd("/home/yanhan/COMP310/path/to", 100) = 29
+write(1, "tshell: /home/yanhan/COMP310/pat"..., 38tshell: /home/yanhan/COMP310/path/to $) = 38
+chdir("file")                           = 0
+rt_sigaction(SIGINT, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+getcwd("/home/yanhan/COMP310/path/to/file", 100) = 34
+write(1, "tshell: /home/yanhan/COMP310/pat"..., 43tshell: /home/yanhan/COMP310/path/to/file $) = 43
+chdir("../")                            = 0
+rt_sigaction(SIGINT, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+getcwd("/home/yanhan/COMP310/path/to", 100) = 29
+write(1, "tshell: /home/yanhan/COMP310/pat"..., 38tshell: /home/yanhan/COMP310/path/to $) = 38
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f8476607790) = 17091
+wait4(-1, NULL, 0, NULL)                = 17091
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=17091, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+rt_sigaction(SIGINT, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+getcwd("/home/yanhan/COMP310/path/to", 100) = 29
+write(1, "tshell: /home/yanhan/COMP310/pat"..., 38tshell: /home/yanhan/COMP310/path/to $) = 38
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f8476607790) = 17092
+wait4(-1, app.py	file  hello.txt  index.html
+NULL, 0, NULL)                = 17092
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=17092, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+rt_sigaction(SIGINT, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+getcwd("/home/yanhan/COMP310/path/to", 100) = 29
+write(1, "tshell: /home/yanhan/COMP310/pat"..., 38tshell: /home/yanhan/COMP310/path/to $) = 38
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f8476607790) = 17093
+wait4(-1, NULL, 0, NULL)                = 17093
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=17093, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+rt_sigaction(SIGINT, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+getcwd("/home/yanhan/COMP310/path/to", 100) = 29
+write(1, "tshell: /home/yanhan/COMP310/pat"..., 38tshell: /home/yanhan/COMP310/path/to $) = 38
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f8476607790) = 17094
+wait4(-1, app.py
+file
+index.html
+NULL, 0, NULL)                = 17094
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=17094, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+rt_sigaction(SIGINT, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+getcwd("/home/yanhan/COMP310/path/to", 100) = 29
+write(1, "tshell: /home/yanhan/COMP310/pat"..., 38tshell: /home/yanhan/COMP310/path/to $) = 38
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f8476607790) = 17095
+wait4(-1, 0 0 0 app.py
+NULL, 0, NULL)                = 17095
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=17095, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+rt_sigaction(SIGINT, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+getcwd("/home/yanhan/COMP310/path/to", 100) = 29
+write(1, "tshell: /home/yanhan/COMP310/pat"..., 38tshell: /home/yanhan/COMP310/path/to $) = 38
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f8476607790) = 17096
+wait4(-1, NULL, 0, NULL)                = 17096
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=17096, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+rt_sigaction(SIGINT, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+getcwd("/home/yanhan/COMP310/path/to", 100) = 29
+write(1, "tshell: /home/yanhan/COMP310/pat"..., 38tshell: /home/yanhan/COMP310/path/to $) = 38
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f8476607790) = 17097
+wait4(-1, /home/yanhan/COMP310/path/to
+NULL, 0, NULL)                = 17097
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=17097, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+rt_sigaction(SIGINT, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+getcwd("/home/yanhan/COMP310/path/to", 100) = 29
+write(1, "tshell: /home/yanhan/COMP310/pat"..., 38tshell: /home/yanhan/COMP310/path/to $) = 38
+write(1, "\n", 1
+)                       = 1
+write(1, "command history from the most re"..., 43command history from the most recent one: 
+) = 43
+write(1, "1. history\n", 111. history
+)            = 11
+write(1, "2. pwd\n", 72. pwd
+)                 = 7
+write(1, "3. cat index.html\n", 183. cat index.html
+)     = 18
+write(1, "4. wc app.py\n", 134. wc app.py
+)          = 13
+write(1, "5. ls -1\n", 95. ls -1
+)               = 9
+write(1, "6. rm hello.txt\n", 166. rm hello.txt
+)       = 16
+write(1, "7. ls\n", 67. ls
+)                  = 6
+write(1, "8. touch hello.txt index.html ap"..., 378. touch hello.txt index.html app.py
+) = 37
+write(1, "9. chdir ../\n", 139. chdir ../
+)          = 13
+write(1, "10. chdir file\n", 1510. chdir file
+)        = 15
+write(1, "11. cd ../path/to\n", 1811. cd ../path/to
+)     = 18
+write(1, "12. cd path/\n", 1312. cd path/
+)          = 13
+write(1, "13. mkdir -p path/to/file/name\n", 3113. mkdir -p path/to/file/name
+) = 31
+write(1, "14. which sh\n", 1314. which sh
+)          = 13
+write(1, "15. ls\n", 715. ls
+)                 = 7
+write(1, "16. pwd\n", 816. pwd
+)                = 8
+write(1, "17. echo hello, world\n", 2217. echo hello, world
+) = 22
+write(1, "18. rm hello.txt\n", 1718. rm hello.txt
+)      = 17
+write(1, "19. touch hello.txt\n", 2019. touch hello.txt
+)   = 20
+write(1, "20. echo hello world\n", 2120. echo hello world
+)  = 21
+write(1, "history ends.\n", 14history ends.
+)         = 14
+rt_sigaction(SIGINT, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+getcwd("/home/yanhan/COMP310/path/to", 100) = 29
+write(1, "tshell: /home/yanhan/COMP310/pat"..., 38tshell: /home/yanhan/COMP310/path/to $) = 38
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f8476607790) = 17098
+wait4(-1, NULL, 0, NULL)                = 17098
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=17098, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+rt_sigaction(SIGINT, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+getcwd("/home/yanhan/COMP310/path/to", 100) = 29
+write(1, "tshell: /home/yanhan/COMP310/pat"..., 38tshell: /home/yanhan/COMP310/path/to $) = 38
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f8476607790) = 17099
+wait4(-1, .  ..  app.py  file  .hidden.txt  index.html
+NULL, 0, NULL)                = 17099
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=17099, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+rt_sigaction(SIGINT, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+getcwd("/home/yanhan/COMP310/path/to", 100) = 29
+write(1, "tshell: /home/yanhan/COMP310/pat"..., 38tshell: /home/yanhan/COMP310/path/to $) = 38
+write(1, "\n", 1
+)                       = 1
+write(1, "command history from the most re"..., 43command history from the most recent one: 
+) = 43
+write(1, "1. history\n", 111. history
+)            = 11
+write(1, "2. ls -a\n", 92. ls -a
+)               = 9
+write(1, "3. touch .hidden.txt\n", 213. touch .hidden.txt
+)  = 21
+write(1, "4. history\n", 114. history
+)            = 11
+write(1, "5. pwd\n", 75. pwd
+)                 = 7
+write(1, "6. cat index.html\n", 186. cat index.html
+)     = 18
+write(1, "7. wc app.py\n", 137. wc app.py
+)          = 13
+write(1, "8. ls -1\n", 98. ls -1
+)               = 9
+write(1, "9. rm hello.txt\n", 169. rm hello.txt
+)       = 16
+write(1, "10. ls\n", 710. ls
+)                 = 7
+write(1, "11. touch hello.txt index.html a"..., 3811. touch hello.txt index.html app.py
+) = 38
+write(1, "12. chdir ../\n", 1412. chdir ../
+)         = 14
+write(1, "13. chdir file\n", 1513. chdir file
+)        = 15
+write(1, "14. cd ../path/to\n", 1814. cd ../path/to
+)     = 18
+write(1, "15. cd path/\n", 1315. cd path/
+)          = 13
+write(1, "16. mkdir -p path/to/file/name\n", 3116. mkdir -p path/to/file/name
+) = 31
+write(1, "17. which sh\n", 1317. which sh
+)          = 13
+write(1, "18. ls\n", 718. ls
+)                 = 7
+write(1, "19. pwd\n", 819. pwd
+)                = 8
+write(1, "20. echo hello, world\n", 2220. echo hello, world
+) = 22
+write(1, "21. rm hello.txt\n", 1721. rm hello.txt
+)      = 17
+write(1, "22. touch hello.txt\n", 2022. touch hello.txt
+)   = 20
+write(1, "23. echo hello world\n", 2123. echo hello world
+)  = 21
+write(1, "history ends.\n", 14history ends.
+)         = 14
+rt_sigaction(SIGINT, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+getcwd("/home/yanhan/COMP310/path/to", 100) = 29
+write(1, "tshell: /home/yanhan/COMP310/pat"..., 38tshell: /home/yanhan/COMP310/path/to $) = 38
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f8476607790) = 17100
+wait4(-1, preparing to exit
+NULL, 0, NULL)                = 17100
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=17100, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+rt_sigaction(SIGINT, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+getcwd("/home/yanhan/COMP310/path/to", 100) = 29
+write(1, "tshell: /home/yanhan/COMP310/pat"..., 38tshell: /home/yanhan/COMP310/path/to $) = 38
+chdir("../../")                         = 0
+rt_sigaction(SIGINT, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+getcwd("/home/yanhan/COMP310", 100)     = 21
+write(1, "tshell: /home/yanhan/COMP310 $", 30tshell: /home/yanhan/COMP310 $) = 30
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f8476607790) = 17101
+wait4(-1, default via 192.168.251.2 dev ens33 proto dhcp metric 100 
+169.254.0.0/16 dev ens33 scope link metric 1000 
+192.168.251.0/24 dev ens33 proto kernel scope link src 192.168.251.164 metric 100 
+NULL, 0, NULL)                = 17101
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=17101, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+rt_sigaction(SIGINT, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+getcwd("/home/yanhan/COMP310", 100)     = 21
+write(1, "tshell: /home/yanhan/COMP310 $", 30tshell: /home/yanhan/COMP310 $) = 30
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f8476607790) = 17102
+wait4(-1, .:
+a	      ltrace_output.txt   manual_testing  try.c
+alex_shell.c  malloc_hog.c	  path		  tshell.c
+a.out	      manual_test001.txt  README.md	  yliu281@mimi.cs.mcgill.ca
+fifo	      manual_test002.txt  test.txt
+
+./a:
+
+./manual_testing:
+
+./path:
+to
+
+./path/to:
+app.py	file  index.html
+
+./path/to/file:
+name
+
+./path/to/file/name:
+NULL, 0, NULL)                = 17102
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=17102, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+rt_sigaction(SIGINT, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+getcwd("/home/yanhan/COMP310", 100)     = 21
+write(1, "tshell: /home/yanhan/COMP310 $", 30tshell: /home/yanhan/COMP310 $) = 30
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f8476607790) = 17103
+wait4(-1, NULL, 0, NULL)                = 17103
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=17103, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+rt_sigaction(SIGINT, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+getcwd("/home/yanhan/COMP310", 100)     = 21
+write(1, "tshell: /home/yanhan/COMP310 $", 30tshell: /home/yanhan/COMP310 $) = 30
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f8476607790) = 17104
+wait4(-1, Command invalid execution failed.
+NULL, 0, NULL)                = 17104
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=17104, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+rt_sigaction(SIGINT, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+getcwd("/home/yanhan/COMP310", 100)     = 21
+write(1, "tshell: /home/yanhan/COMP310 $", 30tshell: /home/yanhan/COMP310 $) = 30
+read(0, "", 4096)                       = 0
+write(1, "\n", 1
+)                       = 1
+write(1, "command history from the most re"..., 43command history from the most recent one: 
+) = 43
+write(1, "1. history\n", 111. history
+)            = 11
+write(1, "2. invalid command\n", 192. invalid command
+)    = 19
+write(1, "3. rm -rf path\n", 153. rm -rf path
+)        = 15
+write(1, "4. ls -R\n", 94. ls -R
+)               = 9
+write(1, "5. ip route show\n", 175. ip route show
+)      = 17
+write(1, "6. cd ../../\n", 136. cd ../../
+)          = 13
+write(1, "7. echo preparing to exit\n", 267. echo preparing to exit
+) = 26
+write(1, "8. history\n", 118. history
+)            = 11
+write(1, "9. ls -a\n", 99. ls -a
+)               = 9
+write(1, "10. touch .hidden.txt\n", 2210. touch .hidden.txt
+) = 22
+write(1, "11. history\n", 1211. history
+)           = 12
+write(1, "12. pwd\n", 812. pwd
+)                = 8
+write(1, "13. cat index.html\n", 1913. cat index.html
+)    = 19
+write(1, "14. wc app.py\n", 1414. wc app.py
+)         = 14
+write(1, "15. ls -1\n", 1015. ls -1
+)             = 10
+write(1, "16. rm hello.txt\n", 1716. rm hello.txt
+)      = 17
+write(1, "17. ls\n", 717. ls
+)                 = 7
+write(1, "18. touch hello.txt index.html a"..., 3818. touch hello.txt index.html app.py
+) = 38
+write(1, "19. chdir ../\n", 1419. chdir ../
+)         = 14
+write(1, "20. chdir file\n", 1520. chdir file
+)        = 15
+write(1, "21. cd ../path/to\n", 1821. cd ../path/to
+)     = 18
+write(1, "22. cd path/\n", 1322. cd path/
+)          = 13
+write(1, "23. mkdir -p path/to/file/name\n", 3123. mkdir -p path/to/file/name
+) = 31
+write(1, "24. which sh\n", 1324. which sh
+)          = 13
+write(1, "25. ls\n", 725. ls
+)                 = 7
+write(1, "26. pwd\n", 826. pwd
+)                = 8
+write(1, "27. echo hello, world\n", 2227. echo hello, world
+) = 22
+write(1, "28. rm hello.txt\n", 1728. rm hello.txt
+)      = 17
+write(1, "29. touch hello.txt\n", 2029. touch hello.txt
+)   = 20
+write(1, "30. echo hello world\n", 2130. echo hello world
+)  = 21
+write(1, "history ends.\n", 14history ends.
+)         = 14
+rt_sigaction(SIGINT, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804cfcb, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, {sa_handler=0x55991804d260, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8476042f20}, 8) = 0
+getcwd("/home/yanhan/COMP310", 100)     = 21
+write(1, "tshell: /home/yanhan/COMP310 $", 30tshell: /home/yanhan/COMP310 $) = 30
+read(0, "", 4096)                       = 0
+write(1, "\n", 1
+)                       = 1
+exit_group(0)                           = ?
++++ exited with 0 +++
+

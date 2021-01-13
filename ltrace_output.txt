@@ -1,0 +1,155 @@
+Fifo pathname was copied successfully.
+You can use commands with pipes in tshell.
+tshell: /home/yanhan/COMP310 $hello world
+tshell: /home/yanhan/COMP310 $tshell: /home/yanhan/COMP310 $tshell: /home/yanhan/COMP310 $hello, world
+tshell: /home/yanhan/COMP310 $/home/yanhan/COMP310
+tshell: /home/yanhan/COMP310 $a
+alex_shell.c
+a.out
+fifo
+ltrace_output.txt
+malloc_hog.c
+manual_test001.txt
+manual_test002.txt
+manual_testing
+README.md
+test.txt
+try.c
+tshell.c
+yliu281@mimi.cs.mcgill.ca
+tshell: /home/yanhan/COMP310 $/bin/sh
+tshell: /home/yanhan/COMP310 $tshell: /home/yanhan/COMP310 $tshell: /home/yanhan/COMP310/path $tshell: /home/yanhan/COMP310/path/to $tshell: /home/yanhan/COMP310/path/to/file $tshell: /home/yanhan/COMP310/path/to $tshell: /home/yanhan/COMP310/path/to $app.py
+file
+hello.txt
+index.html
+tshell: /home/yanhan/COMP310/path/to $tshell: /home/yanhan/COMP310/path/to $app.py
+file
+index.html
+tshell: /home/yanhan/COMP310/path/to $0 0 0 app.py
+tshell: /home/yanhan/COMP310/path/to $tshell: /home/yanhan/COMP310/path/to $/home/yanhan/COMP310/path/to
+tshell: /home/yanhan/COMP310/path/to $
+command history from the most recent one: 
+1. history
+2. pwd
+3. cat index.html
+4. wc app.py
+5. ls -1
+6. rm hello.txt
+7. ls
+8. touch hello.txt index.html app.py
+9. chdir ../
+10. chdir file
+11. cd ../path/to
+12. cd path/
+13. mkdir -p path/to/file/name
+14. which sh
+15. ls
+16. pwd
+17. echo hello, world
+18. rm hello.txt
+19. touch hello.txt
+20. echo hello world
+history ends.
+tshell: /home/yanhan/COMP310/path/to $tshell: /home/yanhan/COMP310/path/to $.
+..
+app.py
+file
+.hidden.txt
+index.html
+tshell: /home/yanhan/COMP310/path/to $
+command history from the most recent one: 
+1. history
+2. ls -a
+3. touch .hidden.txt
+4. history
+5. pwd
+6. cat index.html
+7. wc app.py
+8. ls -1
+9. rm hello.txt
+10. ls
+11. touch hello.txt index.html app.py
+12. chdir ../
+13. chdir file
+14. cd ../path/to
+15. cd path/
+16. mkdir -p path/to/file/name
+17. which sh
+18. ls
+19. pwd
+20. echo hello, world
+21. rm hello.txt
+22. touch hello.txt
+23. echo hello world
+history ends.
+tshell: /home/yanhan/COMP310/path/to $preparing to exit
+tshell: /home/yanhan/COMP310/path/to $tshell: /home/yanhan/COMP310 $default via 192.168.251.2 dev ens33 proto dhcp metric 100 
+169.254.0.0/16 dev ens33 scope link metric 1000 
+192.168.251.0/24 dev ens33 proto kernel scope link src 192.168.251.164 metric 100 
+tshell: /home/yanhan/COMP310 $.:
+a
+alex_shell.c
+a.out
+fifo
+ltrace_output.txt
+malloc_hog.c
+manual_test001.txt
+manual_test002.txt
+manual_testing
+path
+README.md
+test.txt
+try.c
+tshell.c
+yliu281@mimi.cs.mcgill.ca
+
+./a:
+
+./manual_testing:
+
+./path:
+to
+
+./path/to:
+app.py
+file
+index.html
+
+./path/to/file:
+name
+
+./path/to/file/name:
+tshell: /home/yanhan/COMP310 $tshell: /home/yanhan/COMP310 $tshell: /home/yanhan/COMP310 $
+command history from the most recent one: 
+1. history
+2. invalid command
+3. rm -rf path
+4. ls -R
+5. ip route show
+6. cd ../../
+7. echo preparing to exit
+8. history
+9. ls -a
+10. touch .hidden.txt
+11. history
+12. pwd
+13. cat index.html
+14. wc app.py
+15. ls -1
+16. rm hello.txt
+17. ls
+18. touch hello.txt index.html app.py
+19. chdir ../
+20. chdir file
+21. cd ../path/to
+22. cd path/
+23. mkdir -p path/to/file/name
+24. which sh
+25. ls
+26. pwd
+27. echo hello, world
+28. rm hello.txt
+29. touch hello.txt
+30. echo hello world
+history ends.
+tshell: /home/yanhan/COMP310 $
